@@ -1,0 +1,12 @@
+<%= link_to gravatar_for(current_user, size: 52), current_user %>
+<h1>
+  <%= current_user.name %>
+</h1>
+<p class="user-border">
+<span>
+  <%= link_to "view profile", current_user, {:style=>'color:#999900;'} %>
+</span>
+</p>
+<span>
+  <%= pluralize(current_user.microposts.count, "Insta Message") %>
+</span>
